@@ -388,38 +388,42 @@ body {
 .features {
   background: rgba(255,255,255,0.02);
   border-bottom: 1px solid rgba(245,196,0,0.08);
-  padding: 20px 24px;
+  padding: 0 24px;
   overflow: hidden;
 }
 
 .features-inner {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  height: 48px;
 }
 
 .feat-item {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 20px;
+  gap: 6px;
+  padding: 0 16px;
   border-right: 1px solid rgba(255,255,255,0.07);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   color: rgba(255,249,238,0.5);
+  white-space: nowrap;
+  height: 100%;
 }
 
 .feat-item:last-child { border-right: none; }
-.feat-item span:first-child { font-size: 16px; }
+.feat-item span:first-child { font-size: 14px; }
 
 /* ─────────────────────────────
    PAGE CONTENT
 ───────────────────────────── */
 .page-content {
-  max-width: 640px;
+  max-width: 760px;
   margin: 0 auto;
   padding: 56px 24px 80px;
 }
@@ -492,7 +496,7 @@ body {
 
 .form-title {
   font-family: 'Bebas Neue', cursive;
-  font-size: 40px;
+  font-size: 38px;
   color: var(--amarelo);
   letter-spacing: 2px;
   line-height: 1;
@@ -920,7 +924,7 @@ textarea { resize: vertical; min-height: 80px; }
   <div class="section-gap"></div>
 
   <!-- FORM -->
-  <section id="confirmar">
+  <section id="confirmar" style="max-width:540px; margin:0 auto;">
     <div class="form-eyebrow">
       <h2 class="form-title">Confirme sua Presença</h2>
       <p class="form-subtitle">Preencha abaixo — leva menos de 1 minuto</p>
